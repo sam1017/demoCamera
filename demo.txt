@@ -1,0 +1,100 @@
+04-18 11:46:42.502 29375 29375 I CAM2_CameraController: requestCamera:id = 1    mRequestingCameraId = -1
+04-18 11:46:42.563 29375 31192 I CAM2_CameraController: onCameraOpened,CameraProxy = com.android.ex.camera2.portability.AndroidCameraAgentImpl$AndroidCameraProxyImpl@d824232
+04-18 11:46:42.641 29375 29375 D CameraEngine: startPreview -- mCameraInstance = com.android.ex.camera2.portability.AndroidCameraAgentImpl$AndroidCameraProxyImpl@d824232  surfaceTexture = android.graphics.SurfaceTexture@12ee5bc
+04-18 11:46:42.641 29375 29375 D CameraEngine: Build.VERSION.SDK_INT = 30
+04-18 11:46:42.643 29375 29375 I CameraEngine: supportedFocusModes:FIXED
+04-18 11:46:42.650 29375 29375 E CameraEngine: setRotation:270
+04-18 11:46:42.650 29375 29375 E CameraEngine: choosePictureSize support:176,144
+04-18 11:46:42.650 29375 29375 E CameraEngine: choosePictureSize support:320,240
+04-18 11:46:42.650 29375 29375 E CameraEngine: choosePictureSize support:352,288
+04-18 11:46:42.650 29375 29375 E CameraEngine: choosePictureSize support:640,480
+04-18 11:46:42.650 29375 29375 E CameraEngine: choosePictureSize support:720,480
+04-18 11:46:42.650 29375 29375 E CameraEngine: choosePictureSize support:800,480
+04-18 11:46:42.650 29375 29375 E CameraEngine: choosePictureSize support:800,600
+04-18 11:46:42.650 29375 29375 E CameraEngine: choosePictureSize support:960,540
+04-18 11:46:42.650 29375 29375 E CameraEngine: choosePictureSize support:960,720
+04-18 11:46:42.650 29375 29375 E CameraEngine: choosePictureSize support:1280,720
+04-18 11:46:42.650 29375 29375 E CameraEngine: choosePictureSize support:1600,720
+04-18 11:46:42.650 29375 29375 E CameraEngine: choosePictureSize support:1640,720
+04-18 11:46:42.650 29375 29375 E CameraEngine: choosePictureSize support:1280,960
+04-18 11:46:42.650 29375 29375 E CameraEngine: choosePictureSize support:1600,900
+04-18 11:46:42.650 29375 29375 E CameraEngine: choosePictureSize support:1440,1080
+04-18 11:46:42.650 29375 29375 E CameraEngine: choosePictureSize support:1600,1200
+04-18 11:46:42.650 29375 29375 E CameraEngine: choosePictureSize support:1632,1224
+04-18 11:46:42.650 29375 29375 E CameraEngine: choosePictureSize support:1920,1080
+04-18 11:46:42.650 29375 29375 E CameraEngine: choosePictureSize support:2408,1080
+04-18 11:46:42.651 29375 29375 E CameraEngine: choosePictureSize support:2460,1080
+04-18 11:46:42.651 29375 29375 E CameraEngine: choosePictureSize support:2048,1536
+04-18 11:46:42.651 29375 29375 E CameraEngine: choosePictureSize support:1920,1920
+04-18 11:46:42.651 29375 29375 E CameraEngine: choosePictureSize support:2560,1440
+04-18 11:46:42.651 29375 29375 E CameraEngine: choosePictureSize support:3264,1464
+04-18 11:46:42.651 29375 29375 E CameraEngine: choosePictureSize support:2560,1920
+04-18 11:46:42.651 29375 29375 E CameraEngine: choosePictureSize support:3264,1836
+04-18 11:46:42.651 29375 29375 E CameraEngine: choosePictureSize support:3264,2448
+04-18 11:46:42.651 29375 29375 D CameraEngine: 1 getOptimalVideoSnapshotPictureSize size:3264x2448
+04-18 11:46:42.651 29375 29375 E CameraEngine: choosePictureSize size:3264,2448
+04-18 11:46:42.651 29375 29375 E CameraEngine: mCameraPreviewWidth h:960,720
+04-18 11:46:42.984 29375 31192 I FaceBeautyActivity: data.length = 1036800
+
+
+
+
+
+
+
+
+
+
+04-18 11:46:49.476 29375 31192 I FaceBeautyActivity: onPictureTaken mJpegRotation:270
+04-18 11:46:49.476 29375 31192 E FaceBeautyActivity: getJepg time:0
+04-18 11:46:49.477 29375 29375 I CAM2_CameraController: closeMainCamera start
+04-18 11:46:49.651 29375 29375 I CAM2_CameraController: closeMainCamera end
+04-18 11:46:49.651 29375 29375 D CameraEngine: releaseCamera -- done
+04-18 11:46:49.652 29375 29375 I CAM2_CameraController: requestCamera:id = 1    mRequestingCameraId = -1
+04-18 11:46:49.720 29375 31192 I CAM2_CameraController: onCameraOpened,CameraProxy = com.android.ex.camera2.portability.AndroidCameraAgentImpl$AndroidCameraProxyImpl@c2ef497
+04-18 11:46:49.721 29375 29375 D CameraEngine: startPreview -- mCameraInstance = com.android.ex.camera2.portability.AndroidCameraAgentImpl$AndroidCameraProxyImpl@c2ef497  surfaceTexture = android.graphics.SurfaceTexture@12ee5bc
+04-18 11:46:49.721 29375 29375 D CameraEngine: Build.VERSION.SDK_INT = 30
+04-18 11:46:49.723 29375 29375 I CameraEngine: supportedFocusModes:FIXED
+04-18 11:46:49.733 29375 29375 E CameraEngine: setRotation:270
+04-18 11:46:49.733 29375 29375 E CameraEngine: choosePictureSize support:176,144
+04-18 11:46:49.734 29375 29375 E CameraEngine: choosePictureSize support:320,240
+04-18 11:46:49.734 29375 29375 E CameraEngine: choosePictureSize support:352,288
+04-18 11:46:49.734 29375 29375 E CameraEngine: choosePictureSize support:640,480
+04-18 11:46:49.734 29375 29375 E CameraEngine: choosePictureSize support:720,480
+04-18 11:46:49.734 29375 29375 E CameraEngine: choosePictureSize support:800,480
+04-18 11:46:49.734 29375 29375 E CameraEngine: choosePictureSize support:800,600
+04-18 11:46:49.734 29375 29375 E CameraEngine: choosePictureSize support:960,540
+04-18 11:46:49.734 29375 29375 E CameraEngine: choosePictureSize support:960,720
+04-18 11:46:49.734 29375 29375 E CameraEngine: choosePictureSize support:1280,720
+04-18 11:46:49.734 29375 29375 E CameraEngine: choosePictureSize support:1600,720
+04-18 11:46:49.734 29375 29375 E CameraEngine: choosePictureSize support:1640,720
+04-18 11:46:49.734 29375 29375 E CameraEngine: choosePictureSize support:1280,960
+04-18 11:46:49.734 29375 29375 E CameraEngine: choosePictureSize support:1600,900
+04-18 11:46:49.734 29375 29375 E CameraEngine: choosePictureSize support:1440,1080
+04-18 11:46:49.734 29375 29375 E CameraEngine: choosePictureSize support:1600,1200
+04-18 11:46:49.734 29375 29375 E CameraEngine: choosePictureSize support:1632,1224
+04-18 11:46:49.734 29375 29375 E CameraEngine: choosePictureSize support:1920,1080
+04-18 11:46:49.734 29375 29375 E CameraEngine: choosePictureSize support:2408,1080
+04-18 11:46:49.734 29375 29375 E CameraEngine: choosePictureSize support:2460,1080
+04-18 11:46:49.734 29375 29375 E CameraEngine: choosePictureSize support:2048,1536
+04-18 11:46:49.734 29375 29375 E CameraEngine: choosePictureSize support:1920,1920
+04-18 11:46:49.734 29375 29375 E CameraEngine: choosePictureSize support:2560,1440
+04-18 11:46:49.734 29375 29375 E CameraEngine: choosePictureSize support:3264,1464
+04-18 11:46:49.734 29375 29375 E CameraEngine: choosePictureSize support:2560,1920
+04-18 11:46:49.734 29375 29375 E CameraEngine: choosePictureSize support:3264,1836
+04-18 11:46:49.734 29375 29375 E CameraEngine: choosePictureSize support:3264,2448
+04-18 11:46:49.734 29375 29375 D CameraEngine: 1 getOptimalVideoSnapshotPictureSize size:3264x2448
+04-18 11:46:49.734 29375 29375 E CameraEngine: choosePictureSize size:3264,2448
+04-18 11:46:49.734 29375 29375 E CameraEngine: mCameraPreviewWidth h:960,720
+04-18 11:46:49.840 29375 31190 W FaceBeautyRender: processBeauty argb use : 61, size : 2448x3264
+04-18 11:46:50.091 29375 31190 E FaceBeautyActivity: saveFile time:614
+
+
+
+
+
+
+
+04-18 11:46:57.425 29375 29375 I CAM2_CameraController: closeMainCamera start
+04-18 11:46:57.876 29375 29375 I CAM2_CameraController: closeMainCamera end
+04-18 11:46:57.876 29375 29375 D CameraEngine: releaseCamera -- done
