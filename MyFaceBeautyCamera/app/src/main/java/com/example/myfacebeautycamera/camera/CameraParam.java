@@ -131,7 +131,7 @@ public final class CameraParam {
         takeDelay = false;
         luminousEnhancement = false;
         brightness = -1;
-        mGalleryType = GalleryType.VIDEO_15S;
+        mGalleryType = GalleryType.PICTURE;
         captureListener = null;
         captureCallback = null;
         fpsCallback = null;

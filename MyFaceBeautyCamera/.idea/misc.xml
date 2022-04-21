@@ -6,6 +6,11 @@
         <entry key="..\:/Users/dell/AndroidStudioProjects/MyFaceBeautyCamera/app/src/main/res/drawable-v24/button_style.xml" value="0.175" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/MyFaceBeautyCamera/app/src/main/res/layout/activity_camera.xml" value="0.17239583333333333" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/MyFaceBeautyCamera/app/src/main/res/layout/activity_main.xml" value="0.3066123188405797" />
+        <entry key="..\:/code/demo/demoCamera/MyFaceBeautyCamera/app/src/main/res/drawable/bg_bottom_fragment.xml" value="0.1135" />
+        <entry key="..\:/code/demo/demoCamera/MyFaceBeautyCamera/app/src/main/res/layout/activity_camera.xml" value="0.13451086956521738" />
+        <entry key="..\:/code/demo/demoCamera/MyFaceBeautyCamera/app/src/main/res/layout/activity_main.xml" value="0.13451086956521738" />
+        <entry key="..\:/code/demo/demoCamera/MyFaceBeautyCamera/app/src/main/res/layout/fragment_camera_preview.xml" value="0.13451086956521738" />
+        <entry key="..\:/code/demo/demoCamera/MyFaceBeautyCamera/app/src/main/res/layout/view_preview_topbar.xml" value="0.5" />
       </map>
     </option>
   </component>

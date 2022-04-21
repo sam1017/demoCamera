@@ -60,6 +60,7 @@ public class CameraController implements ICameraController, Camera.PreviewCallba
 
     @Override
     public void openCamera() {
+        Log.d(TAG, "openCamera: ");
         closeCamera();
         if (mCamera != null) {
             throw new RuntimeException("camera already initialized!");

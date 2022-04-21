@@ -1,5 +1,18 @@
-<resources>
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    tools:ignore="ExtraTranslation"
+    xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">MyFaceBeautyCamera</string>
-
     <string name="faceBeauty_lite">FaceBeauty</string>
+    <string name="tv_select_music" >select music</string>
+    <string name="btn_stickers">stickers</string>
+    <string name="btn_media">up media</string>
+
+    <string-array name="record_speed_texts">
+        <item>极慢</item>
+        <item>慢</item>
+        <item>标准</item>
+        <item>快</item>
+        <item>极快</item>
+    </string-array>
 </resources>

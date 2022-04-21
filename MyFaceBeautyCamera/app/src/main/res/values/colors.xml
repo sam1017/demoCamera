@@ -9,4 +9,8 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="video_window_background">#000000</color>
+
+    <color name="record_red">@color/red</color>
+    <color name="record_stroke_red">#66FF0000</color>
+
 </resources>

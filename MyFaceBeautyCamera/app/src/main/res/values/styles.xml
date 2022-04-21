@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  相机tab样式  -->
+    <style name="CameraTabTextStyle">
+        <item name="android:textSize">@dimen/dp16</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

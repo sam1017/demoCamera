@@ -1,2 +1,2 @@
-rootProject.name = "MyFaceBeautyCamera"
+
 include ':app', ':facedetectlibrary', ':landmarklibrary', ':utilslibrary', ':filterlibrary', ':gdxlibrary'

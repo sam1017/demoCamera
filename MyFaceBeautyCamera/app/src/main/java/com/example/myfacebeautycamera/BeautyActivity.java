@@ -1,6 +1,7 @@
 package com.example.myfacebeautycamera;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,11 +13,13 @@ public class BeautyActivity extends AppCompatActivity {
 
     private CameraPreviewFragment mPreviewFragment;
     private static final String FRAGMENT_CAMERA = "fragment_camera";
+    private static final String TAG = "BeautyActivity";
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera);
+        Log.i(TAG,"onCreate savedInstanceState = " + savedInstanceState + " mPreviewFragment = " + mPreviewFragment);
         if (null == savedInstanceState && mPreviewFragment == null) {
             mPreviewFragment = new CameraPreviewFragment();
             getSupportFragmentManager()

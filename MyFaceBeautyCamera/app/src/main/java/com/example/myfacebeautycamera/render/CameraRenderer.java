@@ -68,6 +68,7 @@ public class CameraRenderer extends Thread {
 
     public CameraRenderer(@NonNull PreviewPresenter presenter) {
         super(TAG);
+        Log.d(TAG, " CameraRenderer");
         mPriority = Process.THREAD_PRIORITY_DISPLAY;
         mWeakPresenter = new WeakReference<>(presenter);
         mCameraParam = CameraParam.getInstance();
@@ -80,6 +81,7 @@ public class CameraRenderer extends Thread {
      * 初始化渲染器
      */
     public void initRenderer() {
+        Log.d(TAG, "initRenderer: ");
         synchronized (this) {
             if (!mThreadStarted) {
                 start();
@@ -199,6 +201,7 @@ public class CameraRenderer extends Thread {
         synchronized (mSync) {
             mCameraParam.isTakePicture = true;
         }
+        Log.i(TAG,"takePicture() mCameraParam.isTakePicture = " + mCameraParam.isTakePicture );
         requestRender();
     }
 
@@ -368,12 +371,13 @@ public class CameraRenderer extends Thread {
 
         // 显示到屏幕
         mDisplaySurface.swapBuffers();
-
+        Log.i(TAG,"onDrawFrame mCameraParam.isTakePicture = " + mCameraParam.isTakePicture );
         // 执行拍照
         synchronized (mSync) {
             if (mCameraParam.isTakePicture) {
                 if (mImageReader == null) {
                     mImageReader = new GLImageReader(mEglCore.getEGLContext(), bitmap -> {
+                        Log.i(TAG,"onDrawFrame mCameraParam.captureCallback = " + mCameraParam.captureCallback );
                         if (mCameraParam.captureCallback != null) {
                             mCameraParam.captureCallback.onCapture(bitmap);
                         }

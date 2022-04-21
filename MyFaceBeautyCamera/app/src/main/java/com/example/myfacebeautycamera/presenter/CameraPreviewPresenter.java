@@ -35,7 +35,9 @@ import com.example.myfacebeautycamera.fragment.CameraPreviewFragment;
 import com.example.myfacebeautycamera.camera.PreviewCallback;
 import com.example.myfacebeautycamera.listener.OnCaptureListener;
 import com.example.myfacebeautycamera.listener.OnFpsListener;
+import com.example.myfacebeautycamera.listener.OnPreviewCaptureListener;
 import com.example.myfacebeautycamera.render.CameraRenderer;
+import com.example.myfacebeautycamera.utils.PathConstraints;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -89,7 +91,7 @@ public class CameraPreviewPresenter extends PreviewPresenter<CameraPreviewFragme
 
     public void onAttach(FragmentActivity activity) {
         mActivity = activity;
-
+        Log.d(TAG, "onAttach: ");
         mCameraRenderer.initRenderer();
 
 //        // 备注：目前支持CameraX的渲染流程，但CameraX回调预览帧数据有些问题，人脸关键点SDK检测返回的数据错乱，暂不建议在商用项目中使用CameraX
@@ -124,6 +126,7 @@ public class CameraPreviewPresenter extends PreviewPresenter<CameraPreviewFragme
     @Override
     public void onResume() {
         super.onResume();
+        Log.i(TAG,"onResume");
         openCamera();
         mCameraParam.captureCallback = this;
         mCameraParam.fpsCallback = this;
@@ -295,6 +298,7 @@ public class CameraPreviewPresenter extends PreviewPresenter<CameraPreviewFragme
      * 打开相机
      */
     private void openCamera() {
+        Log.i(TAG,"openCamera");
         mCameraController.openCamera();
         calculateImageSize();
     }
@@ -325,6 +329,7 @@ public class CameraPreviewPresenter extends PreviewPresenter<CameraPreviewFragme
 
     @Override
     public void takePicture() {
+        Log.i(TAG,"mCameraRenderer.takePicture()");
         mCameraRenderer.takePicture();
     }
 
@@ -424,6 +429,7 @@ public class CameraPreviewPresenter extends PreviewPresenter<CameraPreviewFragme
     // ------------------------- Camera 输出SurfaceTexture准备完成回调 -------------------------------
     @Override
     public void onSurfaceTexturePrepared(@NonNull SurfaceTexture surfaceTexture) {
+        Log.d(TAG,"onSurfaceTexturePrepared");
         onCameraOpened();
         mCameraRenderer.bindInputSurfaceTexture(surfaceTexture);
     }
@@ -448,7 +454,8 @@ public class CameraPreviewPresenter extends PreviewPresenter<CameraPreviewFragme
     // ------------------------------ SurfaceTexture帧可用回调 --------------------------------------
     @Override
     public void onFrameAvailable(SurfaceTexture surfaceTexture) {
-//        mCameraRenderer.requestRender();
+        Log.i(TAG,"onFrameAvailable");
+        mCameraRenderer.requestRender();
     }
 
     /**
@@ -480,11 +487,12 @@ public class CameraPreviewPresenter extends PreviewPresenter<CameraPreviewFragme
 
     @Override
     public void onCapture(Bitmap bitmap) {
-/*        String filePath = PathConstraints.getImageCachePath(mActivity);
+        String filePath = PathConstraints.getImageCachePath(mActivity);
+        Log.i(TAG,"onCapture filePath = " + filePath);
         BitmapUtils.saveBitmap(filePath, bitmap);
         if (mCameraParam.captureListener != null) {
             mCameraParam.captureListener.onMediaSelectedListener(filePath, OnPreviewCaptureListener.MediaTypePicture);
-        }*/
+        }
     }
 
     // ------------------------------------ 渲染fps回调 ------------------------------------------
